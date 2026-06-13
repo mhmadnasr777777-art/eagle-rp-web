@@ -1,0 +1,282 @@
+/* إعدادات الخطوط والألوان العامة المظلمة المناسبة لـ Roleplay */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+:root {
+    --bg-color: #0d0f12;
+    --card-bg: #161920;
+    --primary-color: #ff3e3e;
+    --accent-color: #7289da;
+    --text-color: #ffffff;
+    --text-muted: #a0a5b5;
+    --border-color: #262b36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center { text-align: center; }
+.hidden { display: none !important; }
+
+/* زر اختيار اللغة العائم الذكي على الجانب */
+.lang-switcher-btn {
+    position: fixed;
+    top: 50%;
+    left: 20px; /* يثبت على الجانب الأيسر */
+    transform: translateY(-50%);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.lang-switcher-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* في حال كانت اللغة إنجليزية، ينقلب الزر للطرف الآخر تلقائياً لكي لا يحجب شيئاً */
+body.en .lang-switcher-btn {
+    left: auto;
+    right: 20px;
+}
+
+/* الهيدر */
+header {
+    background-color: rgba(22, 25, 32, 0.95);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
+}
+
+.btn-nav {
+    background-color: var(--primary-color);
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+/* قسم الـ Hero */
+.hero-section {
+    padding: 100px 0;
+    text-align: center;
+    background: radial-gradient(circle at center, #1e2330 0%, #0d0f12 100%);
+}
+
+.hero-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.hero-section p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+.discord-color { background-color: #5865F2; }
+.tiktok-color { background-color: #010101; border: 1px solid #25f4ee; }
+
+/* كروت القوانين */
+.section-title {
+    text-align: center;
+    margin: 60px 0 30px 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.laws-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.law-card {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.law-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.law-nlr { background-color: #241414; border-color: #5c2020; }
+.law-nlr:hover { border-color: #ff4d4d; }
+.law-power { background-color: #111a2e; border-color: #1f3763; }
+.law-power:hover { border-color: #3b76f6; }
+.law-nvl { background-color: #291a10; border-color: #613b1c; }
+.law-nvl:hover { border-color: #e67e22; }
+.law-meta { background-color: #1d122b; border-color: #422569; }
+.law-meta:hover { border-color: #9b59b6; }
+.law-rdm { background-color: #240f19; border-color: #541b39; }
+.law-rdm:hover { border-color: #e91e63; }
+.law-respect { background-color: #242011; border-color: #544922; }
+.law-respect:hover { border-color: #f1c40f; }
+
+.law-card img { width: 60px; margin-bottom: 15px; }
+.law-card h3 { margin-bottom: 10px; font-size: 1.25rem; }
+.law-card p { color: #e0e4ed; font-size: 0.95rem; }
+
+/* الألوان للبلوكات المفصلة */
+.detailed-laws { margin-top: 40px; }
+.law-block { padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+
+.law-general-block {
+    background-color: #171c26;
+    border-right: 4px solid #3498db;
+    border-top: 1px solid #262b36;
+    border-left: 1px solid #262b36;
+    border-bottom: 1px solid #262b36;
+}
+/* قلب الحواف الملونة عند التحول للغة الإنجليزية */
+body.en .law-general-block { border-right: 1px solid #262b36; border-left: 4px solid #3498db; }
+
+.law-driving-block {
+    background-color: #0f2421;
+    border-right: 4px solid #1abc9c;
+    border-top: 1px solid #163631;
+    border-left: 1px solid #163631;
+    border-bottom: 1px solid #163631;
+}
+body.en .law-driving-block { border-right: 1px solid #163631; border-left: 4px solid #1abc9c; }
+
+.law-police-block {
+    background-color: #12192e;
+    border-right: 4px solid #2980b9;
+    border-top: 1px solid #1c284a;
+    border-left: 1px solid #1c284a;
+    border-bottom: 1px solid #1c284a;
+}
+body.en .law-police-block { border-right: 1px solid #1c284a; border-left: 4px solid #2980b9; }
+
+.law-icon { width: 30px; vertical-align: middle; margin-left: 10px; }
+body.en .law-icon { margin-left: 0; margin-right: 10px; }
+
+.law-block h4 { margin: 20px 0 10px 0; color: var(--primary-color); }
+.law-block ul { margin-right: 20px; color: #d1d5db; }
+body.en .law-block ul { margin-right: 0; margin-left: 20px; }
+.law-block li { margin-bottom: 8px; }
+
+.laws-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+@media(max-width: 768px) {
+    .laws-two-col { grid-template-columns: 1fr; }
+    .navbar { flex-direction: column; gap: 15px; }
+}
+
+/* المؤسسين */
+.founders-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.founder-card { background-color: var(--card-bg); text-align: center; padding: 25px; border-radius: 8px; border: 1px solid var(--border-color); }
+.founder-card img { width: 110px; height: 110px; border-radius: 8px; object-fit: cover; margin-bottom: 15px; border: 2px solid var(--border-color); }
+
+/* التفعيل والـ Form */
+.activation-card { background-color: var(--card-bg); padding: 40px; border-radius: 10px; max-width: 800px; margin: 0 auto; }
+.action-buttons { display: flex; gap: 15px; margin-top: 30px; }
+.btn-agree, .btn-disagree { flex: 1; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.btn-agree { background-color: #2ecc71; color: white; }
+.btn-disagree { background-color: #e74c3c; color: white; }
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 500; text-align: start; }
+.form-group input, .form-group textarea { width: 100%; padding: 12px; background-color: var(--bg-color); border: 1px solid var(--border-color); color: white; border-radius: 5px; }
+
+.submit-btn { background-color: var(--primary-color); color: white; border: none; padding: 12px 30px; font-size: 1.1rem; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; margin-top: 10px; transition: 0.3s; }
+.submit-btn:hover { background-color: #cc2a2a; }
+
+footer { text-align: center; padding: 30px 0; margin-top: 60px; border-top: 1px solid var(--border-color); color: var(--text-muted); }

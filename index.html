@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+    <title>النسر - Eagle RP</title>
+    </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>النسر - Eagle RP</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- استدعاء خطوط FontAwesome للأيقونات -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- زر تبديل اللغة العائم على الجانب -->
+        <div class="lang-switcher-btn" onclick="toggleLanguage()">
+            <i class="fas fa-globe"></i>
+            <span id="lang-btn-text">English</span>
+        </div>
+        <!-- الهيدر وشريط التنقل -->
+        <header>
+            <div class="navbar container">
+                <div class="logo">
+                    <img src="-س2.png" alt="Eagle RP Logo">
+                    <span>Eagle RP</span>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#laws" data-ar="القوانين" data-en="Laws">القوانين</a>
+                        </li>
+                        <li>
+                            <a href="#Founders" data-ar="المؤسسين" data-en="Founders">المؤسسين</a>
+                        </li>
+                        <li>
+                            <a href="#activation" class="btn-nav" data-ar="التفعيل" data-en="Whitelist">التفعيل</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- القسم الرئيسي -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <h1>Eagle RP</h1>
+                <p id="hero-desc" data-ar="سيرفر النسر هو مجتمع متكامل يهدف لتقديم تجربة حياة واقعية فريدة من نوعها، نركز على الاحترافية والعدالة وبناء مجتمع مترابط وممتع لجميع اللاعبين." data-en="Eagle RP server is an integrated community aiming to offer a unique realistic roleplay experience, focusing on professionalism, fairness, and building a fun, connected community for all players.">سيرفر النسر هو مجتمع متكامل يهدف لتقديم تجربة حياة واقعية فريدة من نوعها، نركز على الاحترافية والعدالة وبناء مجتمع مترابط وممتع لجميع اللاعبين.
+            </p>
+                <div class="social-links">
+                    <a href="https://discord.gg/JDS6fmDWze" target="_blank" class="social-btn discord-color">
+                        <i class="fab fa-discord"></i>
+                        <span data-ar="سيرفر الديسكورد" data-en="Discord Server">سيرفر الديسكورد</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@eaglerp5?_r=1&_t=ZS-96mmPqTLbq1" target="_blank" class="social-btn tiktok-color">
+                        <i class="fab fa-tiktok"></i>
+                        <span data-ar="حسابنا في تيك توك" data-en="Our TikTok">حسابنا في تيك توك</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- قسم القوانين -->
+        <section id="laws" class="laws-section container">
+            <h2 class="section-title">
+                <i class="fas fa-gavel"></i>
+                <span data-ar="قوانين السيرفر" data-en="Server Laws">قوانين السيرفر</span>
+            </h2>
+            <div class="laws-grid">
+                <!-- قانون 1 -->
+                <div class="law-card law-nlr">
+                    <img src="https://cdn-icons-png.flaticon.com/512/10433/10433048.png" alt="NLR">
+                    <h3 data-ar="قوانين الحياة الجديدة - NLR" data-en="New Life Rules - NLR">قوانين الحياة الجديدة - NLR</h3>
+                    <p data-ar="في حال اغمائك بشكل كامل لا يمكنك الكلام او الحركة او فعل أي شيء. في حال تم اسقاطك من قبل شخص وتم انعاشك من قبل مسعفين تستطيع تذكر جميع الاحداث، وفي حال تم اعطائك ابرة 'في العيادة الخاصة' من احد اللاعبين الذين لديهم عداوة معك لا تستطيع تذكر أي شيء حصل لك." data-en="If you completely pass out, you cannot speak, move, or do anything. If you are downed and revived by medics, you can remember all events. If given an injection in a private clinic by an adversary, you cannot remember anything.">في حال اغمائك بشكل كامل لا يمكنك الكلام او الحركة او فعل أي شيء. في حال تم اسقاطك من قبل شخص وتم انعاشك من قبل مسعفين تستطيع تذكر جميع الاحداث، وفي حال تم اعطائك ابرة "في العيادة الخاصة" من احد اللاعبين الذين لديهم عداوة معك لا تستطيع تذكر أي شيء حصل لك.
+                </p>
+                </div>
+                <!-- قانون 2 -->
+                <div class="law-card law-power">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8002/8002123.png" alt="PowerGaming">
+                    <h3 data-ar="الباور جيمنج - PowerGaming" data-en="PowerGaming">الباور جيمنج - PowerGaming</h3>
+                    <p data-ar="استخدام الوسائل غير الموجودة في اللعبة للحصول على ميزة أو عدم التوافق مع العالم بطريقة معقولة وبشكل واقعي، وهناك الكثير من المواقف والامثلة التي تندرج تحت هذا البند." data-en="Using mechanics or means not present in the game to gain an advantage or behaving unrealistically within the world. Many situations fall under this clause.">استخدام الوسائل غير الموجودة في اللعبة للحصول على ميزة أو عدم التوافق مع العالم بطريقة معقولة وبشكل واقعي، وهناك الكثير من المواقف والامثلة التي تندرج تحت هذا البند.
+                </p>
+                </div>
+                <!-- قانون 3 -->
+                <div class="law-card law-nvl">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1022/1022331.png" alt="NVL">
+                    <h3 data-ar="الخوف على الحياة - NVL" data-en="Not Valuing Life - NVL">الخوف على الحياة - NVL</h3>
+                    <p data-ar="عدم الخوف بشكل واقعي على حياتك عندما تتعرض للتهديد بالأسلحة أو بأذى شديد من وسائل أخرى يعتبر الخوف على الحياة شيء اساسي ومهم جداً." data-en="Failing to realistically fear for your life when threatened with weapons or severe harm. Valuing your life is a core and essential rule.">عدم الخوف بشكل واقعي على حياتك عندما تتعرض للتهديد بالأسلحة أو بأذى شديد من وسائل أخرى يعتبر الخوف على الحياة شيء اساسي ومهم جداً.
+                </p>
+                </div>
+                <!-- قانون 4 -->
+                <div class="law-card law-meta">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1491/1491214.png" alt="Metagaming">
+                    <h3 data-ar="الميتا جيمنج Metagaming" data-en="Metagaming">الميتا جيمنج Metagaming</h3>
+                    <p data-ar="أي معلومة تحصل عليها من خارج المدينة (مثل بث أو ديسكورد أو مقطع باليوتيوب) كلها تعتبر مخالفة صريحة يعاقب عليها القانون." data-en="Using any information obtained outside the city (like streams, Discord, or YouTube videos) is a direct violation penalized by law.">أي معلومة تحصل عليها من خارج المدينة (مثل بث أو ديسكورد أو مقطع باليوتيوب) كلها تعتبر مخالفة صريحة يعاقب عليها القانون.
+                </p>
+                </div>
+                <!-- قانون 5 -->
+                <div class="law-card law-rdm">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" alt="RDM">
+                    <h3 data-ar="القتل العشوائي - RDM" data-en="Random Deathmatch - RDM">القتل العشوائي - RDM</h3>
+                    <p data-ar="قتل الأشخاص دون سبب، تهديد، بصورة عشوائية او بدون عداوة مسبقة يعتبر القتل العشوائي ممنوع ومخالف للنظام العام للسيرفر." data-en="Killing players without a valid reason, threat, randomly, or without prior hostility is strictly prohibited and violates server order.">قتل الأشخاص دون سبب، تهديد، بصورة عشوائية او بدون عداوة مسبقة يعتبر القتل العشوائي ممنوع ومخالف للنظام العام للسيرفر.
+                </p>
+                </div>
+                <!-- قانون 6 -->
+                <div class="law-card law-respect">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3364/3364789.png" alt="Eagle RP Law">
+                    <h3 data-ar="قانون تقدير الحياة - النسر" data-en="Value of Life Law - Eagle RP">قانون تقدير الحياة - النسر</h3>
+                    <p data-ar="الحفاظ على حياتك وحياة الآخرين، وعدم التهور، وأن لا تستهين بقتل الأشخاص، وأن لا تقاوم المجرم أو الشرطة او اي شخص يحمل سلاحاً خصوصاً إذا كنت أعزل." data-en="Preserving your life and others', avoiding recklessness, not underestimating killing, and not resisting criminals or police if you are unarmed.">الحفاظ على حياتك وحياة الآخرين، وعدم التهور، وأن لا تستهين بقتل الأشخاص، وأن لا تقاوم المجرم أو الشرطة او اي شخص يحمل سلاحاً خصوصاً إذا كنت أعزل.
+                </p>
+                </div>
+            </div>
+            <!-- تفاصيل القوانين العامة والشروط -->
+            <div class="detailed-laws">
+                <div class="law-block law-general-block">
+                    <h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" class="law-icon">
+                        <span data-ar="القوانين العامة والشروط" data-en="General Rules & Terms">القوانين العامة والشروط</span>
+                    </h3>
+                    <h4 data-ar="📌 شروط عامة" data-en="📌 General Conditions">📌 شروط عامة</h4>
+                    <ul>
+                        <li data-ar="العمر المسموح لدخول السيرفر: 13 سنة فما فوق." data-en="Allowed age to join the server: 13 years and above.">العمر المسموح لدخول السيرفر: 13 سنة فما فوق.</li>
+                        <li data-ar="ممنوع استخدام أي شخصية افتراضية إلا من خلال المتجر فقط." data-en="Using any custom avatar is strictly through the store only.">ممنوع استخدام أي شخصية افتراضية إلا من خلال المتجر فقط.</li>
+                        <li data-ar="ممنوع كتابة أسمك باللغة الإنجليزية أو برموز أو تشكيل أو يكون اسم شخصية مشهورة." data-en="Prohibited to write your name in English, symbols, diacritics, or celebrity names.">ممنوع كتابة أسمك باللغة الإنجليزية أو برموز أو تشكيل أو يكون اسم شخصية مشهورة.</li>
+                        <li data-ar="يحق لك امتلاك شخصيتين فقط." data-en="You are entitled to own two characters only.">يحق لك امتلاك شخصيتين فقط.</li>
+                    </ul>
+                    <h4 data-ar="🎥 اللعب والبث" data-en="🎥 Gameplay & Streaming">🎥 اللعب والبث</h4>
+                    <ul>
+                        <li data-ar="ممنوع الستريم سنايب أو متابعة البثوث أثناء اللعب (عقوبتها شديدة)." data-en="Stream sniping or watching streams while playing is strictly banned (severe penalty).">ممنوع الستريم سنايب أو متابعة البثوث أثناء اللعب (عقوبتها شديدة).</li>
+                        <li data-ar="ممنوع التواجد في الديسكورد أو التواصل الخارجي مع لاعبين آخرين أثناء اللعب." data-en="Being on Discord or externally communicating with other players during gameplay is prohibited.">ممنوع التواجد في الديسكورد أو التواصل الخارجي مع لاعبين آخرين أثناء اللعب.</li>
+                    </ul>
+                    <h4 data-ar="🧑🏾‍💼 القوانين العامة داخل السيرفر" data-en="🧑🏾‍💼 In-Game General Laws">🧑🏾‍💼 القوانين العامة داخل السيرفر</h4>
+                    <ul>
+                        <li data-ar="ممنوع طلب تعويض عند خسارة أموالك أو أغراضك بسبب التحلل أو المستشفى." data-en="Requesting compensation for losing money or items due to decay or hospital is forbidden.">ممنوع طلب تعويض عند خسارة أموالك أو أغراضك بسبب التحلل أو المستشفى.</li>
+                        <li data-ar="يمنع القذف، الشتم، الطائفية، السياسة، الدين، أو القبلية (العقوبة: باند نهائي)." data-en="Insults, racism, sectarianism, politics, religion, or tribalism are banned (Penalty: Permanent Ban).">يمنع القذف، الشتم، الطائفية، السياسة، الدين، أو القبلية (العقوبة: باند نهائي).</li>
+                        <li data-ar="يمنع مشاركة أي من حساباتك أو معلوماتك الشخصية مع أي شخص (العقوبة: باند نهائي)." data-en="Sharing any of your accounts or personal info with anyone is forbidden (Penalty: Permanent Ban).">يمنع مشاركة أي من حساباتك أو معلوماتك الشخصية مع أي شخص (العقوبة: باند نهائي).</li>
+                    </ul>
+                </div>
+                <div class="laws-two-col">
+                    <!-- قوانين القيادة -->
+                    <div class="law-block law-driving-block shadow-box">
+                        <h3>
+                            <img src="https://cdn-icons-png.flaticon.com/512/741/741407.png" class="law-icon">
+                            <span data-ar="قوانين القيادة" data-en="Driving Laws">قوانين القيادة</span>
+                        </h3>
+                        <p data-ar="القيادة يجب أن تكون واقعية: لا سرعة مفرطة بدون سبب، لا قطع إشارات عشوائي، ومخالفة هذه القوانين تعرّضك لتحذير Power Gaming أو الباند." data-en="Driving must be realistic: no excessive speed without reason, no random running of traffic lights. Violating these subjects you to a Power Gaming warning or a ban.">القيادة يجب أن تكون واقعية: لا سرعة مفرطة بدون سبب، لا قطع إشارات عشوائي، ومخالفة هذه القوانين تعرّضك لتحذير Power Gaming أو الباند.
+                    </p>
+                    </div>
+                    <!-- قوانين الشرطة -->
+                    <div class="law-block law-police-block shadow-box">
+                        <h3>
+                            <img src="https://cdn-icons-png.flaticon.com/512/11499/11499870.png" class="law-icon">
+                            <span data-ar="قوانين الشرطة" data-en="Police Laws">قوانين الشرطة</span>
+                        </h3>
+                        <p data-ar="احترام رجال الأمن والانصياع التام للأوامر في نقاط التفتيش. يمنع منعا باتاً الهروب غير المبرر أو صدم مركبات الشرطة عمداً، ومخالفة ذلك تعرضك للمساءلة القانونية الصارمة داخل المدينة." data-en="Respect law enforcement and fully comply with orders at checkpoints. Unjustified fleeing or intentionally ramming police vehicles is strictly forbidden and leads to strict prosecution.">احترام رجال الأمن والانصياع التام للأوامر في نقاط التفتيش. يمنع منعا باتاً الهروب غير المبرر أو صدم مركبات الشرطة عمداً، ومخالفة ذلك تعرضك للمساءلة القانونية الصارمة داخل المدينة.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- قسم المؤسسين -->
+        <section  id="Founders" class="Founders-section container">
+            <h2 class="section-title">
+                <img src="data:image/png;base64,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" class="title-icon">
+                <br>
+                <span data-ar="المؤسسين" data-en="Founders">المؤسسين</span>
+            </h2>
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <img src="999.webp" alt="ابو غمدة">
+                    <h3>ابو غمدة</h3>
+                    <p data-ar="اونر ومسؤول الديسكورد" data-en="Owner & Discord Manager">اونر ومسؤول الديسكورد</p>
+                </div>
+                <div class="founder-card">
+                    <img src="89879.png" alt="محمد(المالك)">
+                    <h3>محمد</h3>
+                    <p data-ar="اونر السيرفر ومطور الماب" data-en="Owner, Server Manager & Map Developer">اونر ومسؤول عن السيرفر ومطور الماب</p>
+                </div>
+                <div class="founder-card">
+                    <img src="IMG_4674.jpg" alt="فارس الحربي">
+                    <h3>فارس الحربي</h3>
+                    <p data-ar="اونر مسؤول عن الادارة وعن الشات" data-en="Owner, Administration & Chat Manager">اونر مسؤول عن الادارة وعن الشات</p>
+                </div>
+                <div class="founder-card">
+                    <img src="8989.png" alt="عثمان">
+                    <h3>عثمان</h3>
+                    <p data-ar="كو اونر مسؤول الماب ومطور" data-en="Co-Owner, Map Manager & Developer">كو اونر مسؤول الماب ومطور</p>
+                </div>
+            </div>
+        </section>
+        <!-- قسم التفعيل (النموذج المحدث) -->
+        <section id="activation" class="activation-section container">
+            <h2 class="section-title">
+                <img src="897.png" class="title-icon">
+                <span data-ar="التفعيل" data-en="Activation">التفعيل</span>
+            </h2>
+            <br <!-- صفحة الشروط الأولية -->
+        <div id="step-rules" class="activation-card">
+                <h3 data-ar="الشروط العامة" data-en="General Conditions">الشروط العامة</h3>
+                <ul class="rules-list">
+                    <li data-ar="العمر المسموح لدخول السيرفر: 13 سنة فما فوق." data-en="Allowed age to join the server: 13 years and above.">العمر المسموح لدخول السيرفر: 13 سنة فما فوق.</li>
+                    <li data-ar="ممنوع استخدام أي شخصية افتراضية إلا من خلال المتجر فقط." data-en="Using any custom avatar is strictly through the store only.">ممنوع استخدام أي شخصية افتراضية إلا من خلال المتجر فقط.</li>
+                    <li data-ar="ممنوع كتابة أسمك باللغة الإنجليزية أو برموز أو تشكيل أو يكون اسم شخصية مشهورة." data-en="Prohibited to write your name in English, symbols, or celebrity names.">ممنوع كتابة أسمك باللغة الإنجليزية أو برموز أو تشكيل أو يكون اسم شخصية مشهورة.</li>
+                    <li data-ar="يمنع الدخول من أجهزة غير جهازك الشخصي." data-en="Logging in from devices other than your personal device is forbidden.">يمنع الدخول من أجهزة غير جهازك الشخصي.</li>
+                    <li data-ar="يحق لك امتلاك شخصيتين فقط." data-en="You are entitled to own two characters only.">يحق لك امتلاك شخصيتين فقط.</li>
+                </ul>
+                <div class="action-buttons">
+                    <button onclick="nextStep()" class="btn-agree">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="20">
+                        <span data-ar="الموافقة على الشروط" data-en="Agree to Terms">الموافقة على الشروط</span>
+                    </button>
+                    <button onclick="disagree()" class="btn-disagree">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="20">
+                        <span data-ar="غير موافق على الشروط" data-en="Disagree">غير موافق على الشروط</span>
+                    </button>
+                </div>
+            </div>
+            <!-- صفحة أسئلة التفعيل النموذجية -->
+            <div id="step-form" class="activation-card hidden">
+                <form id="whitelistForm">
+                    <h3 data-ar="معلومات الشخصية" data-en="Character Information">معلومات الشخصية</h3>
+                    <div class="form-group">
+                        <label data-ar="اكتب ايدي حسابك (ID) ديسكورد؟ *" data-en="Write your Discord User ID? *">اكتب ايدي حسابك (ID) ديسكورد؟ *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-ar="اكتب يوزرك روبلوكس؟ *" data-en="Write your Roblox Username? *">اكتب يوزرك روبلوكس؟ *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-ar="شرفنا باسمك وعمرك الحقيقيين؟ *" data-en="Please share your real name and age? *">شرفنا باسمك وعمرك الحقيقيين؟ *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-ar="اسم الشخصية الأول والأخير وتاريخ ميلادها والمنشئ واللغة الخاصة بالشخصية؟ *" data-en="Character first & last name, birth date, origin, and character language? *">اسم الشخصية الأول والأخير وتاريخ ميلادها والمنشئ واللغة الخاصة بالشخصية؟ *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-ar="ماهي قصة الشخصية؟ (لاتقل عن 5 اسطر ولا تزيد عن 10 اسطر) *" data-en="What is your character's backstory? (Between 5 to 10 lines) *">ماهي قصة الشخصية؟ (لاتقل عن 5 اسطر ولا تزيد عن 10 اسطر) *</label>
+                        <textarea rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label data-ar="ماهي ايجابيات وسلبيات الشخصية من القصة؟ *" data-en="What are the pros and cons of the character based on the story? *">ماهي ايجابيات وسلبيات الشخصية من القصة؟ *</label>
+                        <textarea rows="3" required></textarea>
+                    </div>
+                    <!-- زر الإرسال النهائي لإنهاء التقديم -->
+                    <button type="submit" class="submit-btn" data-ar="تم الانتهاء وإرسال" data-en="Finished and Submit">تم الانتهاء وإرسال</button>
+                </form>
+            </div>
+        </section>
+        <!-- الفوتر -->
+        <footer>
+            <p>
+                &copy;2026 <span data-ar="جميع الحقوق محفوظة لـ النسر" data-en="All rights reserved to Eagle RP">جميع الحقوق محفوظة لـ النسر</span>
+            </p>
+        </footer>
+        <script src="script.js"></script>
+        <!-- Code injected by live-server -->
+        <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket'in window) {
+                (function() {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function(msg) {
+                        if (msg.data == 'reload')
+                            window.location.reload();
+                        else if (msg.data == 'refreshcss')
+                            refreshCSS();
+                    }
+                    ;
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                }
+                )();
+            } else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+    </body>
+</html>
